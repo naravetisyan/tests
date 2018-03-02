@@ -1,0 +1,4 @@
+Executing: /tmp/tmp.uILDfNrA5v/gpg.1.sh --fetch-keys
+http://dl.yarnpkg.com/debian/pubkey.gpg
+echo
+deb http://nightly.yarnpkg.com/debian/ nightly main

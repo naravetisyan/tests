@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Flag, Segment } from 'semantic-ui-react'
 
 class App extends Component {
   render() {
-    let arr = [1, 2, 3, 4, 5, 6];
     return (
       <div className="App">
         <header className="App-header">
@@ -12,17 +12,16 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
           <i className="am flag" />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <select>
-          {
-          arr.map((value, index) => {
-            return <option key={index}>{value}</option>;
-          })}
-        </select>
+
+const FlagExampleFlag = () => (
+  <Segment>
+    <Flag name='ae' />
+    <Flag name='france' />
+    <Flag name='myanmar' />
+  </Segment>
+)
       </div>
-    );
+    )
   }
 }
 
